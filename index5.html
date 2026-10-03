@@ -2,97 +2,100 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RELACIONES</title>
         <link rel="stylesheet" href="css/estilo.css"> 
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     </head>
     <body>
-        <div class="contenedor1">
-            <div class="contenido">
+        <main class="contenedor1">
+            <section class="contenido">
                 <header class="Galeria">
-                    <h2>RELACIONES</h2>
-                    <article>
-                        <form name="datos_usuario" method="post" action="#" enctype="multipart/form-data"> 
-                            
+                    <h2><span class="material-symbols-outlined">hub</span> RELACIONES</h2>
+                    <article class="formularioContenedor">
+                        <form name="datos_relaciones" action="#"> 
                             <fieldset class="cuadroRelacion">
                                 <legend>Auto - Corredor</legend>
-                                <div class="filaflex">
-                                    <div>
-                                        <label>Auto:</label><br>
+                                <section class="filaflex">
+                                    <section class="campo">
+                                        <label for="auto_corredor">Auto:</label>
                                         <select id="auto_corredor">
                                             <option value="">Seleccione Auto</option>
                                             <option value="RB20">RB20</option>
                                             <option value="SF-24">SF-24</option>
                                             <option value="MCL38">MCL38</option>
                                         </select>
-                                    </div>
-                                    <div>
-                                        <label>Corredor:</label><br>
+                                    </section>
+                                    <section class="campo">
+                                        <label for="corredor">Corredor:</label>
                                         <select id="corredor">
                                             <option value="">Seleccione Corredor</option>
-                                            <option value="Checo Pérez">Checo Pérez</option>
+                                            <option value="Checo Pérez">Checo Perez</option>
                                             <option value="Max Verstappen">Max Verstappen</option>
                                             <option value="Charles Leclerc">Charles Leclerc</option>
                                         </select>
-                                    </div>
-                                </div>
+                                    </section>
+                                </section>
                             </fieldset>
 
-                            <br>
-
-                            <!-- Bloque 2: Auto - Escudería -->
                             <fieldset class="cuadroRelacion">
                                 <legend>Auto - Escudería</legend>
-                                <div class="filaflex">
-                                    <div>
-                                        <label>Auto:</label><br>
+                                <section class="filaflex">
+                                    <section class="campo">
+                                        <label for="auto_escuderia">Auto:</label>
                                         <select id="auto_escuderia">
                                             <option value="">Seleccione Auto</option>
                                             <option value="RB20">RB20</option>
                                             <option value="SF-24">SF-24</option>
                                             <option value="MCL38">MCL38</option>
                                         </select>
-                                    </div>
-                                    <div>
-                                        <label>Escudería:</label><br>
+                                    </section>
+                                    <section class="campo">
+                                        <label for="escuderia">Escuderia:</label>
                                         <select id="escuderia">
                                             <option value="">Seleccione Escudería</option>
                                             <option value="Red Bull Racing">Red Bull Racing</option>
                                             <option value="Ferrari">Ferrari</option>
                                             <option value="McLaren">McLaren</option>
                                         </select>
-                                    </div>
-                                </div>
+                                    </section>
+                                </section>
                             </fieldset>
 
-                            <br>
-                            <button type="button" id="boton" onclick="guardarRelaciones()">Guardar</button>
+                            <button type="button" id="boton" onclick="guardarRelaciones()">
+                                <span class="material-symbols-outlined">save</span>Guardar</button>
                         </form>
                     </article>
                 </header>
-            </div> 
+            </section> 
             
             <aside class="menuLateral">
-                <h3>MENU</h3>
-                <ul>
-        <li><a href="index2.html">AUTOS</a></li>
-        <li><a href="index3.html">ESCUDERIA</a></li>
-        <li><a href="index4.html">CORREDOR</a></li>
-        <li><a href="index5.html">RELACIONES</a></li>
-                </ul>
+                <header>
+                    <h3><span class="material-symbols-outlined">menu</span> MENÚ</h3>
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="index2.html"><span class="material-symbols-outlined">directions_car</span> AUTOS</a></li>
+                        <li><a href="index3.html"><span class="material-symbols-outlined">groups</span> ESCUDERÍA</a></li>
+                        <li><a href="index4.html"><span class="material-symbols-outlined">person</span> CORREDOR</a></li>
+                        <li><a href="index5.html"><span class="material-symbols-outlined">hub</span> RELACIONES</a></li>
+                    </ul>
+                </nav>
             </aside>
-        </div>  
+        </main>  
        
         <footer class="conFooter">
-            <div class="footerIzq">
-                <div class="opFooter">
-                    <a>Santiago Guadalupe Ramirez De La Torre</a>
-                </div>
-                <div class="gogle">
-                    <a>LDSM405</a>
-                </div>
-            </div>
+            <section class="footerIzq">
+                <article class="opFooter">
+                    <p>Santiago Guadalupe Ramirez De La Torre</p>
+                </article>
+                <article class="gogle">
+                    <p>LDSM405</p>
+                </article>
+            </section>
         </footer>
+
         <script src="JAVAS/Funcionalidad.js"></script>
     </body>
 </html>

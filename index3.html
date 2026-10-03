@@ -2,55 +2,64 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>ESCUDERIA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ESCUDERÍA</title>
         <link rel="stylesheet" href="css/estilo.css"> 
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     </head>
     <body>
-        <div class="contenedor1">
-            <div class="contenido">
+        <main class="contenedor1">
+            <section class="contenido">
                 <header class="Galeria">
-                    <h2>ESCUDERIA</h2>
-                    <article>
-                        <form name="datos_usuario" method="post" action="#" enctype="multipart/form-data"> 
-                            <div id="datoss" class="datoss">
-                                <div>
-                                    <label>Nombre:</label><br>
-                                    <input type="text" id="nombre" placeholder="Ej. [Nombre]"/> 
-                                </div>
-                                <div>
-                                    <label>Descripción:</label><br>
-                                    <textarea cols="50" rows="5" id="Descripcion" placeholder="Ingrese detalles aquí..."></textarea>
-                                </div>
-                            </div>
-                            
-                            <button type="button" id="boton" onclick="guardarEscuderia()">Guardar</button>
+                    <h2><span class="material-symbols-outlined">groups</span> ESCUDERÍA</h2>
+                    <article class="formularioContenedor">
+                        <form name="datos_escuderia" action="#"> 
+                            <section class="datoss">
+                                <section class="campo">
+                                    <label for="nombre">Nombre de Escuderia:</label>
+                                    <input type="text" id="nombre" placeholder="Ej. Red Bull Racing"/> 
+                                </section>
+
+                                <section class="campo">
+                                    <label for="Descripcion">Descripcion:</label>
+                                    <textarea cols="50" rows="5" id="Descripcion" placeholder="Ingrese los detalles de la escudería..."></textarea>
+                                </section>
+                            </section>
+
+                            <button type="button" id="boton" onclick="guardarEscuderia()">
+                                <span class="material-symbols-outlined">save</span> Guardar</button>
                         </form>
                     </article>
                 </header>
-            </div> 
+            </section> 
             
             <aside class="menuLateral">
-                <h3>MENU</h3>
-                <ul>
-        <li><a href="index2.html">AUTOS</a></li>
-        <li><a href="index3.html">ESCUDERIA</a></li>
-        <li><a href="index4.html">CORREDOR</a></li>
-        <li><a href="index5.html">RELACIONES</a></li>
-                </ul>
+                <header>
+                    <h3><span class="material-symbols-outlined">menu</span> MENÚ</h3>
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="index2.html"><span class="material-symbols-outlined">directions_car</span> AUTOS</a></li>
+                        <li><a href="index3.html"><span class="material-symbols-outlined">groups</span> ESCUDERÍA</a></li>
+                        <li><a href="index4.html"><span class="material-symbols-outlined">person</span> CORREDOR</a></li>
+                        <li><a href="index5.html"><span class="material-symbols-outlined">hub</span> RELACIONES</a></li>
+                    </ul>
+                </nav>
             </aside>
-        </div>  
+        </main>  
        
         <footer class="conFooter">
-            <div class="footerIzq">
-                <div class="opFooter">
-                    <a>Santiago Guadalupe Ramirez De La Torre</a>
-                </div>
-                <div class="gogle">
-                    <a>LDSM405</a>
-                </div>
-            </div>
+            <section class="footerIzq">
+                <article class="opFooter">
+                    <p>Santiago Guadalupe Ramirez De La Torre</p>
+                </article>
+                <article class="gogle">
+                    <p>LDSM405</p>
+                </article>
+            </section>
         </footer>
+
         <script src="JAVAS/Funcionalidad.js"></script>
     </body>
 </html>
