@@ -13,39 +13,31 @@
                     <h2>ㅤㅤㅤAUTOS</h2>
                     <article>
                          <form name="datos_usuario" method="post" action="#" enctype="multipart/form-data"> 
-                        <div id="datoss" class="datoss">
-                            <div>
-                                <label>Modelo: </label>
-                                <input type="text" id="modelo" placeholder="Ej. [Nombre]"/> 
-                            </div>
-                            <div>
-                                <label>ㅤ</label>
-                            </div>
-                            <div>
-                                <label>Color: </label>
-                                <input type="text" id="color" placeholder="Ej. [Color]"/> 
-                            </div>
-                            <div>
-                                <label>ㅤ</label>
-                            </div>
-                            <div>
-                                <label>Foto: </label>
-                                <input type="file" id="imagen" />
-                            </div>
-                            <div>
-                                <label>ㅤ</label>
-                            </div>
-                             <div id="Activo">
-                                <label>Activo: </label>
-                                <input type="radio" name="op" value="No"/> No
-                                <input type="radio" name="op" value="Si"/> Si 
-                            </div>
-                        </div>
-                              <div>
-                                <label>ㅤ</label>
-                            </div>
-                    <button type="button" id="boton" onclick="mi_metodo()">Registrar en Sistema</button>
-                </form>
+    <div class="datoss">
+        <div>
+            <label>Modelo:</label><br>
+            <input type="text" id="modelo" placeholder="Ej. [Modelo]"/> 
+        </div>
+        
+        <div>
+            <label>Color:</label><br>
+            <input type="text" id="color" placeholder="Ej. [Color]"/> 
+        </div>
+
+        <div>
+            <label>Foto:</label><br>
+            <input type="file" id="imagen" />
+        </div>
+
+        <div id="Activo">
+            <label>Activo:</label>
+            <input type="radio" name="activo" value="No"/> No
+            <input type="radio" name="activo" value="Si"/> Si 
+        </div>
+    </div>
+
+    <button type="button" id="boton" onclick="guardarAutos()">Guardar</button>
+</form>
                     </article>
                 </header>
             </div> 
@@ -53,7 +45,7 @@
 <aside class="menuLateral">
     <h3>MENU</h3>
     <ul>
-        <li><a href="">AUTOS</a></li>
+        <li><a href="#">AUTOS</a></li>
         <li><a href="#">ESCUDERIA</a></li>
         <li><a href="#">CORREDOR</a></li>
         <li><a href="#">RELACIONES</a></li>

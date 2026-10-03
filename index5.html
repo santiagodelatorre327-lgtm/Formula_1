@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>AUTOS</title>
+        <title>RELACIONES</title>
         <link rel="stylesheet" href="css/estilo.css"> 
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
@@ -10,55 +10,78 @@
         <div class="contenedor1">
             <div class="contenido">
                 <header class="Galeria">
-                    <h2>ㅤㅤㅤAUTOS</h2>
+                    <h2>RELACIONES</h2>
                     <article>
-                         <form name="datos_usuario" method="post" action="#" enctype="multipart/form-data"> 
-                        <div id="datoss" class="datoss">
-                            <div>
-                                <label>Modelo: </label>
-                                <input type="text" id="modelo" placeholder="Ej. [Nombre]"/> 
-                            </div>
-                            <div>
-                                <label>ㅤ</label>
-                            </div>
-                            <div>
-                                <label>Color: </label>
-                                <input type="text" id="color" placeholder="Ej. [Color]"/> 
-                            </div>
-                            <div>
-                                <label>ㅤ</label>
-                            </div>
-                            <div>
-                                <label>Foto: </label>
-                                <input type="file" id="imagen" />
-                            </div>
-                            <div>
-                                <label>ㅤ</label>
-                            </div>
-                             <div id="Activo">
-                                <label>Activo: </label>
-                                <input type="radio" name="op" value="No"/> No
-                                <input type="radio" name="op" value="Si"/> Si 
-                            </div>
-                        </div>
-                              <div>
-                                <label>ㅤ</label>
-                            </div>
-                    <button type="button" id="boton" onclick="mi_metodo()">Registrar en Sistema</button>
-                </form>
+                        <form name="datos_usuario" method="post" action="#" enctype="multipart/form-data"> 
+                            
+                            <!-- Bloque 1: Auto - Corredor -->
+                            <fieldset class="cuadroRelacion">
+                                <legend>Auto - Corredor</legend>
+                                <div class="filaflex">
+                                    <div>
+                                        <label>Auto:</label><br>
+                                        <select id="auto_corredor">
+                                            <option value="">Seleccione Auto</option>
+                                            <option value="RB20">RB20</option>
+                                            <option value="SF-24">SF-24</option>
+                                            <option value="MCL38">MCL38</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>Corredor:</label><br>
+                                        <select id="corredor">
+                                            <option value="">Seleccione Corredor</option>
+                                            <option value="Checo Pérez">Checo Pérez</option>
+                                            <option value="Max Verstappen">Max Verstappen</option>
+                                            <option value="Charles Leclerc">Charles Leclerc</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <br>
+
+                            <!-- Bloque 2: Auto - Escudería -->
+                            <fieldset class="cuadroRelacion">
+                                <legend>Auto - Escudería</legend>
+                                <div class="filaflex">
+                                    <div>
+                                        <label>Auto:</label><br>
+                                        <select id="auto_escuderia">
+                                            <option value="">Seleccione Auto</option>
+                                            <option value="RB20">RB20</option>
+                                            <option value="SF-24">SF-24</option>
+                                            <option value="MCL38">MCL38</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>Escudería:</label><br>
+                                        <select id="escuderia">
+                                            <option value="">Seleccione Escudería</option>
+                                            <option value="Red Bull Racing">Red Bull Racing</option>
+                                            <option value="Ferrari">Ferrari</option>
+                                            <option value="McLaren">McLaren</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <br>
+                            <button type="button" id="boton" onclick="guardarRelaciones()">Guardar</button>
+                        </form>
                     </article>
                 </header>
             </div> 
             
-<aside class="menuLateral">
-    <h3>MENU</h3>
-    <ul>
-        <li><a href="">AUTOS</a></li>
-        <li><a href="#">ESCUDERIA</a></li>
-        <li><a href="#">CORREDOR</a></li>
-        <li><a href="#">RELACIONES</a></li>
-    </ul>
-</aside>
+            <aside class="menuLateral">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="index.html">AUTOS</a></li>
+                    <li><a href="escuderia.html">ESCUDERIA</a></li>
+                    <li><a href="corredor.html">CORREDOR</a></li>
+                    <li><a href="relaciones.html">RELACIONES</a></li>
+                </ul>
+            </aside>
         </div>  
        
         <footer class="conFooter">
