@@ -32,17 +32,18 @@ body {
 #boton {
     width: 30%;
     padding: 15px;
-    background-color: #bc1111;
+    background-color: #FF1E00;
     color: #000000;
     font-weight: bold;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background-position: center;
+    background-position:top;
+    
 }
 
 .cubo {
-    background-color: #bc1111e3;
+    background-color: #FF1E00;
     margin: 10px;
     width: 20%;
     height: 150px;
@@ -57,7 +58,7 @@ body {
 
 .menuLateral {
     width: 20%; 
-    background-color: #bc1111fe;
+    background-color: #FF1E00;
     text-align: center;
     border-radius: 17px;
     padding: 10px;
@@ -116,7 +117,7 @@ body {
 
 .footerIzq {
     width: 100%;
-    background-color: #bc1111;
+    background-color: #FF1E00;
     border-radius: 18px;
     padding: 15px 25px;
     display: flex;
@@ -138,6 +139,13 @@ fieldset {
     padding-inline: 0.75em;
     width: 95%;
 }
+.datoss{
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    margin-bottom: 60px; 
+
+}
 
 label {
     font-size: 45px;
@@ -145,4 +153,30 @@ label {
     font-family: "Roboto Condensed", sans-serif;
     margin-bottom: 70px;
     color:rgb(0, 0, 0);
+}
+/*index3*/
+.filaflex {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 60px; 
+    flex-wrap: wrap;
+}
+/** INDEX 4*/
+.cuadroRelacion {
+    border: 2px dashed  #FF1E00; 
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.cuadroRelacion legend {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+select {
+    padding: 6px;
+    border-radius: 5px;
+    min-width: 150px;
 }
